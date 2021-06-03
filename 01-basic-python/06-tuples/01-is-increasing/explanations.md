@@ -26,16 +26,18 @@ For example, try the following in a Python shell:
 
 >>> list(zip(xs, ys))
 [(1, 'a'), (2, 'b'), (3, 'c')]
+#  list() returns a list
 ```
 
 Also experiment to see what happens if the lists do not have the same size.
+<!-- The element is left out -->
 
 ## Reasoning Behind Tuples
 
 The reason that tuples exist is more apparent in statically typed languages such as Java or C#. We'll continue our explanation using C# since tuples have a cleaner implementation
 than in Java.
 
-In C#, a list is generally represented using an `List<T>`.
+In C#, a list is generally represented using a `List<T>`.
 This class embodies the same functionality as Java's `ArrayList<T>`.
 A `List<T>` contains nothing but `T`s, which is why it is called *homogenous*.
 Also, the size of the list can vary during execution; in general, you don't know
